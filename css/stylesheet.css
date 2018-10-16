@@ -308,8 +308,17 @@ footer a {
 }
 
 footer a:hover{
-  color: red;
+  color: #FF4E50;
   transition: 0.4s;
+}
+
+footer .skolan:hover{
+  color: #A5058B!important;
+  transition: 0.4s;
+}
+
+.skolan:hover{
+  color: green;
 }
 
 @keyframes zoomin{
