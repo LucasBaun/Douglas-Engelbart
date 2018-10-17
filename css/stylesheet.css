@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5{
 }
 
 b {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 p{
@@ -35,7 +35,7 @@ a{
 }
 
 hr{
-      margin: 20px 0;
+  margin: 20px 0;
 }
 
 nav{
@@ -83,9 +83,24 @@ nav{
 }
 
 .container{
-  margin-top: 40px;
+  margin-top: 75px;
   padding: 0.01em 16px;
   display: block;
+}
+
+.containerimg{
+  margin-top: 10px;
+  padding: 0.01em 16px;
+  display: block;
+}
+
+.credits a{
+  text-decoration: none;
+}
+
+.credits a:hover{
+  color: #FF4E50;
+  transition: 0.4s;
 }
 
 .container:before, .container:after {
@@ -176,6 +191,59 @@ nav{
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+.imgclose{
+  position: absolute;
+  right: 0;
+  padding: 1px 25px;
+  font-size: 40px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.imgclose:hover{
+  color:#000!important;
+  background-color:#ccc!important;
+}
+
+.imgfocus{
+  margin: auto;
+  color: #ffffff;
+}
+
+.imgzoomed{
+    animation: zoomin 0.6s;
+    text-align: center!important;
+    padding-top: 64px!important;
+}
+
+footer{
+  background-color: #474747;
+  color: #ffffff;
+  align-content: flex-end;
+  text-align: right;
+  padding-right: 25px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: #FF4E50;
+  transition: 0.4s;
+}
+
+footer .skolan:hover{
+  color: #bc039e;
+  transition: 0.4s;
+}
+
+@keyframes zoomin{
+  from{transform:scale(0)} to{transform:scale(1)}
+}
+
 @media (min-width:993px)
 {
   .navbutton, .smallnav{
@@ -251,52 +319,4 @@ nav{
     width: 50%;
     padding-top: 30px;
   }
-}
-
-.imgclose{
-  position: absolute;
-  right: 0;
-  padding: 1px 25px;
-  font-size: 40px;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.imgclose:hover{
-  color:#000!important;
-  background-color:#ccc!important;
-}
-
-.imgfocus{
-  margin: auto;
-  color: #ffffff;
-}
-
-.imgzoomed{
-    animation: zoomin 0.6s;
-    text-align: center!important;
-    padding-top: 64px!important;
-}
-
-footer{
-  background-color: #474747;
-  color: #ffffff;
-  align-content: flex-end;
-  text-align: right;
-  padding-right: 25px;
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
-
-footer a {
-  text-decoration: none;
-}
-
-footer a:hover{
-  color: red;
-  transition: 0.4s;
-}
-
-@keyframes zoomin{
-  from{transform:scale(0)} to{transform:scale(1)}
 }

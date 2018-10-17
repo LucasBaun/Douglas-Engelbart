@@ -7,43 +7,50 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="icon" href="img/logo.png">
 <body>
+
 <!-- nav + credits -->
 <nav class="navbar" id="navbaren"><br>
   <a href="javascript:void(0)" onclick="nav_close()" class="navbutton">Close Menu</a>
   <div class="container">
-    <h3 class="credits">Gjort av:<br><b>Lucas<br>Baunsgaard<br>17B</b></h3>
+    <h3 class="credits">Gjort av:<br><a href="https://github.com/LucasBaun" target="_blank"><b>Lucas<br>Baunsgaard<br>17B</b></h3></a>
   </div>
   <div class="navmenu">
     <a href="#" onclick="nav_close()" class="navtext">Douglas Engelbart</a>
-    <a href="#youtube" onclick="nav_close()" class="navtext">Mother of demos</a>
+    <a href="#youtube" onclick="nav_close()" class="navtext">The Mother Of All Demos</a>
     <a href="#TimBernerLee" onclick="nav_close()" class="navtext">Tim-Berners Lee</a>
     <a href="#links" onclick="nav_close()" class="navtext">Källor</a>
   </div>
 </nav>
+
 <!-- nav för mindre skärmar -->
 <div class="smallnav">
   <a href="javascript:void(0)" class="smallbutton" onclick="nav_open()">☰</a>
   <span>Douglas Engelbart</span>
 </div>
+
 <!-- overlay när man öppnar menu på mindre skärm -->
 <div class="navoverlay" onclick="nav_close()" id="myOverlay"></div>
+
 <!-- "hemsidan" -->
 <div class="content">
+
   <!-- om Douglas Engelbart -->
   <h1 class="title"><b>Douglas Engelbart</b></h1>
   <div class="container" id="info">
     <h1 class="smalltitle"><b>Vem var han?</b></h1>
     <hr class="line">
     <p>Douglas Engelbart föddes 30 januari 1925 i Portland. Han gick bort 2 juli 2013 i kalifornien. Douglas var en amerikansk uppfinnare och utvecklare med lite norsk ursprung. Han är känd för sin största uppfinning datormusen. År 1968  den 9 december demonstrerade Douglas Engelbart hans datormus offentligt för första gången på “Fall Joint Computer Conference” i San Francisco. Han var då den första som visade upp ett system med datormus, tangentbort och en bildskärm. Han visade däremot också upp de första exemplen på användning av hypertext, grafisk användargränssnitt med fönster, telekonferenssystem över nätverk och hypermedia. Douglas uppfann eller bidrog till alla framsteg inom det han visade upp.</p>
-    <p>I början av 50-talet så beslöt sig Douglas för att istället att jobba för NASA skulle han istället fokusera på att göra världen en bättre plats att leva på. Han trodde redan på hans tid att datorerna skulle hjälpa oss människor med att automatisera olika saker och skulle lösa problem. Han ville skynda på tills datorer blev stora så han kunde lösa fler problem. Hans dröm var att använda datorer för att koppla upp sig på ett nätverk för att kunna dela information i “nutid”. han brann verkligen för det han gjorde och gav teknologin en stor push framåt. Man kan se hans demo på youtube genom att antingen scrolla ner till “mother of demos” eller <a href="https://www.youtube.com/watch?v=VScVgXM7lQQ" target="_blank">klicka här.</a>
+    <p>I början av 50-talet så beslöt sig Douglas för att istället att jobba för NASA skulle han istället fokusera på att göra världen en bättre plats att leva på. Han trodde redan på hans tid att datorerna skulle hjälpa oss människor med att automatisera olika saker och skulle lösa problem. Han ville skynda på tills datorer blev stora så han kunde lösa fler problem. Hans dröm var att använda datorer för att koppla upp sig på ett nätverk för att kunna dela information i “nutid”. han brann verkligen för det han gjorde och gav teknologin en stor push framåt. Man kan se hans demo på youtube genom att antingen scrolla ner till “The Mother Of All Demos” eller <a href="https://www.youtube.com/watch?v=VScVgXM7lQQ" target="_blank">klicka här.</a>
     </p>
-    </div>
+  </div>
+
   <!-- bild på douglas -->
-  <div class="container">
+  <div class="containerimg">
     <div class="imgsize">
       <img src="img/doug1.jpg" onclick="onClick(this)" alt="Doug Engelbart 2008. Han var nästan 84 år på bilden.">
     </div>
   </div>
+
   <!-- bilden "closeup"-->
   <div id="closeup" class="imgbackground" style="padding-top:0" onclick="this.style.display='none'">
     <span class="imgclose">X</span>
@@ -52,14 +59,16 @@
       <p id="caption"></p>
     </div>
   </div>
-  <!-- Mother of demos -->
-  <div class="container" id="youtube" style="margin-top:75px">
-    <h1 class="smalltitle"><b>Mother Of Demos</b></h1>
+
+  <!-- The Mother Of All Demos -->
+  <div class="container" id="youtube">
+    <h1 class="smalltitle"><b>The Mother Of All Demos</b></h1>
     <hr class="line">
     <p>Här är en YouTube video från Douglas Engelbart's demo när han visade sina uppvisningar.</p>
     <iframe class="mobile" width="340" height="280" src="https://www.youtube.com/embed/VScVgXM7lQQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     <iframe class="desktop" width="560" height="315" src="https://www.youtube.com/embed/VScVgXM7lQQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
+
   <!-- Tim  -->
   <div class="container" id="TimBernerLee">
     <h1 class="smalltitle"><b>Tim-Berner Lee</b></h1>
@@ -76,13 +85,16 @@
     <p>https://sv.wikipedia.org/wiki/Douglas_Engelbart</p>
     <p>https://www.w3schools.com/html/default.asp</p>
     <p>https://sv.wikipedia.org/wiki/Tim_Berners-Lee</p>
+    <p>https://www.youtube.com/watch?v=yJDv-zdhzMY</p>
     <br>
-    <p style="margin-bottom:55px;">Jag valde dom här källorna för det var dom som gavs till mig av läraren. Jag har också googlat för att lösa problemet jag fått under tiden samt några andra sidor för faktan. Jag jämförde sidorna och det stod lika på alla sidor.</p>
+    <p style="margin-bottom:55px;">Jag valde dom här källorna för det var dom som gavs till mig av läraren. Jag har också googlat för att lösa problemet jag fått under tiden samt några andra sidor för faktan. Jag jämförde sidorna och det stod lika på alla sidor. Jag kollade på YouTube videon för att höra hans egna ord och tankar.</p>
   </div>
 </div>
-  <footer>
-    <p>Hemsidan var gjord av: <a href="http://www.lurre.se" target="_blank">Lucas Baunsgaard</a>, elev på NTI Gymnasiet Västerås</p>
-  </footer>
+
+<!-- footer med credits till github och skolan -->
+<footer>
+  <p>Hemsidan var gjord av: <a href="https://github.com/LucasBaun" target="_blank">Lucas Baunsgaard</a>, elev på <a href="https://www.ntigymnasiet.se/vasteras/" class="skolan">NTI Gymnasiet Västerås</a></p>
+</footer>
 <script>
 
 function nav_open() {
@@ -103,6 +115,5 @@ function onClick(element) {
 }
 
 </script>
-
 </body>
 </html>
